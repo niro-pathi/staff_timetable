@@ -31,11 +31,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     templateUrl: 'templates/menu.html',
     controller: 'AppCtrl'
   })
-  .state('app.search', {
-    url: '/search',
+  .state('app.profile', {
+    url: '/profile',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/profile.html'
       }
     }
   })
@@ -43,10 +43,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: '/timetable',
     views: {
       'menuContent': {
-        templateUrl: 'templates/timetable.html'
+        templateUrl: 'templates/timetable.html',
+         controller: 'TimetableCtrl'
       }
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/timetable');
+  $urlRouterProvider.otherwise('/app/profile');
 });

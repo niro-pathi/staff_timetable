@@ -40,3 +40,13 @@ angular.module('starter.controllers', [])
     }, 1000);
   };
 })
+
+.controller('TimetableCtrl', function($scope) {
+  $scope.timetable = [
+    { subject: 'English', grade: "2A" },
+    { subject: 'Maths', grade: "4C" },
+    { subject: 'Science', grade: "5A" },
+    { subject: 'English', grade: "4B" },
+    {  subject: 'Science', grade: "4C" }
+  ];
+});

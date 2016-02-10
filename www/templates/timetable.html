@@ -1,5 +1,16 @@
-<ion-view view-title="Search" id="skin-blur-chrome">
-  <ion-content>
-    <h1>Timetable</h1>
-  </ion-content>
+<ion-view view-title="Staff Timetable" id="skin-blur-chrome">
+    <ion-content>
+
+      <div class="row header">
+          <div class="col col-50">Subject</div>
+          <div class="col">Class</div>
+      </div>
+
+       <div class="row" ng-repeat="data in timetable" >
+          <div class="col col-50">{{data.subject}}</div>
+          <div class="col">{{data.grade}}</div>
+       </div>
+
+
+    </ion-content>
 </ion-view>

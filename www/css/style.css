@@ -2841,7 +2841,7 @@ a.list-group-item.active > .badge,
 /*custom is class added to ion-content*/
 
 .custom {
-  background-color: #3f4041 !important; /* This sets the background color*/
+  background-color: #40404E !important; /* This sets the background color*/
  }
 
 /*Set the background to transparent for ion-item*/
@@ -2850,7 +2850,7 @@ a.list-group-item.active > .badge,
   border:none;   /*Removes all borders*/
   border-top: 1px solid;   /*Top Border for each menu item*/
   border-bottom:2px solid;   /*Bottom border for each menu item*/
-  border-color: white;   /*Sets colors for top and bottom border*/
+  border-color: #666;   /*Sets colors for top and bottom border*/
   color: white;    /*Text color for each item*/
 }
 
@@ -2869,4 +2869,32 @@ a.list-group-item.active > .badge,
 .custom p,
 .custom a {
   color: white;  /*Text color for each item, overrides the color property above*/
+}
+
+.bar.bar-dark {
+    border-color: #111;
+    background-color: #40404E;
+    background-image: linear-gradient(0deg, #111, #111 50%, transparent 50%);
+    color: #fff; }
+.bar.bar-dark .title {
+      color: #fff; }
+.bar.bar-dark.bar-footer {
+      background-image: linear-gradient(180deg, #111, #111 50%, transparent 50%); }
+
+.header .col {
+    background-color:lightgrey;
+}
+
+.col {
+    border: solid 1px grey;
+    border-bottom-style: none;
+    border-right-style: none;
+}
+
+.col:last-child {
+    border-right: solid 1px grey;
+}
+
+.row:last-child .col {
+    border-bottom: solid 1px grey;
 }
